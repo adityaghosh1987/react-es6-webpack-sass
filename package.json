@@ -1,0 +1,54 @@
+{
+  "name": "react-es6-webpack-sass",
+  "version": "1.0.0",
+  "description": "Project setup for reactJS",
+  "main": "development/app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "dev": "webpack-dev-server --devtool eval --colors --content-base development/",
+    "prod": "webpack-dev-server --content-base production/",
+    "qa-build": "set NODE_ENV=QA&& webpack --progress",
+    "stage-build": "set NODE_ENV=STAGE&& webpack --progress",
+    "prod-build": "set NODE_ENV=PROD&& webpack --progress",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityaghosh1987/react-es6-webpack-sass.git"
+  },
+  "keywords": [
+    "webpack-react",
+    "react-es6",
+    "react-sass",
+    "react-webpack",
+    "sass",
+    "es6"
+  ],
+  "author": "Aditya Ghosh <adityashr.ghosh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adityaghosh1987/react-es6-webpack-sass/issues"
+  },
+  "homepage": "https://github.com/adityaghosh1987/react-es6-webpack-sass#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "clean-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.17.0",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.12.0"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}

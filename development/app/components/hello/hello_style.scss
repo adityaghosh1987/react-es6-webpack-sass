@@ -1,0 +1,13 @@
+@import '../../stylesheets/color_variables.scss';
+
+#HelloComponent{
+  color : #00FF00;
+  .header{
+    font-size: 15px;
+    background-color: $header-bg-color;
+  }
+  .content{
+    color: #FF0000;
+    background-color: #999999;
+  }
+}
